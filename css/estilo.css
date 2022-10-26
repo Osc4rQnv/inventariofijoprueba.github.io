@@ -799,6 +799,10 @@ main .busqueda input[type="submit"]:hover{
         padding: 0px;
         margin: 5px 10px 10px;
     }
+   
+    nav img {
+	    position: fixed;
+    }
 }
 
 @media (max-width:768px) {
