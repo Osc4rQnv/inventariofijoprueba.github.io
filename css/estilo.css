@@ -801,7 +801,7 @@ main .busqueda input[type="submit"]:hover{
     }
    
     nav img {
-	    position: fixed;
+	    position: static;
     }
 }
 
