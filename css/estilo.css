@@ -800,9 +800,9 @@ main .busqueda input[type="submit"]:hover{
         margin: 5px 10px 10px;
     }
    
-    nav img {
+    /*nav img {
 	    position: static;
-    }
+    }*/
 }
 
 @media (max-width:768px) {
