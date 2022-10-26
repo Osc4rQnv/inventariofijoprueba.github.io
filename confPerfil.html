@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es_MX">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuración</title>
+    <!-- Font Awesome File-->
+    <link rel="stylesheet" href="plugins/fontawesome-6.2.0/css/all.css">
+    
+    <!--Icono de la pagina-->
+    <link rel="shortcut icon" href="img/Pacs-Logo.png" type="image/x-icon">
+
+    <!-- Bootstrap cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">-->
+
+    <!-- CSS File -->
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+</head>
+<body>
+
+    <!-- Start Header -->
+    <header>
+        <div class="wrapper">
+            <!-- Brand Image -->
+            <a href="#" class="logo"><img src="img/Pacs-Logo2.png" alt=""></a>
+            <i class="toggle-btn fas fa-bars"></i>
+            <!-- Navbar -->
+            <nav class="nav-menus">
+                <li><a href="inicio.html"><i class="fas fa-home"></i> Inicio</a></li>
+                <li><a href="dashboard.html"><i class="fa fa-truck"></i> Dashboard</a></li>
+                <li><a href="activo-fijo.html"><i class="fas regular fa-warehouse"></i> Activo Fijo</a></li>
+                <li><a href="movimientos.html"><i class="fa fa-truck"></i> Movimientos</a></li>
+                <li><a href="usuarios.html"><i class="fas regular fa-user"></i> Usuarios</a></li>
+                <li class="sub-menus"><a href="#"><i class="fa fa-user-circle"></i> Admin</a>
+                    <ul>
+                        <li><a href="#"><i class="fa fa-cog"></i> Configuración</a></li>
+                        <li><a href="index.html"><i class="fas fa-sign-out"></i> Cerrar Sesión</a></li>
+                    </ul>
+                </li>
+            </nav>
+        </div>
+    </header>
+
+    <main class="title">
+        <!--Formularios para Actualizar Datos de Usuarios-->
+        <div class="titulo">
+            <img src="img/update.png" alt="">
+            <h2>Configuración</h2>
+            <h5>Puede Actualizar sus Datos</h5>
+        </div>
+
+        <div class="editP">
+            <form action="">
+                <div class="wrapperC">
+                    <div class="boxC">
+                        <input type="text" name="fname" id="fname" required>
+                        <label for="fname">Nombre de Usuario</label>
+                    </div>
+                    <div class="boxC">
+                        <input type="password" name="fpws" id="fpws" required>
+                        <label for="fpws">Contraseña</label>
+                    </div>
+                </div>
+                <div class="wrapperC">
+                    <div class="boxC">
+                        <input type="password" name="fpws" id="fpws" required>
+                        <label for="fpws">Repetir Contraseña</label>
+                    </div>
+                    <div class="boxC">
+                        <input type="file" name="foto" id="foto" required>
+                        <label for="foto">Fotografía</label>
+                    </div>
+                </div>
+
+                <div class="btnC">
+                    <input type="submit" name="fSafe" id="btnGC" value="Guardar">
+                    <input type="submit" name="fCancel" id="btnCC" value="Cancelar">
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                    <div class="col-lg-12">
+                        <div class="footer_nav-container">
+                            <div class="cr">Todos los derechos reservados 2022 &copy;</div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jquery JS File -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- End Header -->
+    <!-- Toggle jQuery for Small Devices -->
+    <script type="text/javascript">
+        $(".toggle-btn").click(function(){
+            $(this).toggleClass("fa-times");
+            $(".nav-menus").toggleClass("active");
+        });
+    </script>
+    <!--<script src="js/Hide&Unfold.js"></script>
+	<script src="js/jquery-3.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+		integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+		crossorigin="anonymous">
+    </script>-->
+    <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>-->
+</body>
+</html>
